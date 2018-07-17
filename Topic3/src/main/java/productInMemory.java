@@ -1,13 +1,22 @@
 public class productInMemory implements product {
-    public void product(String name, String price) {
 
+    String name;
+    String price;
+
+    public void producInMemory() {
+        this.name = "No Name";
+        this.price = "00,0";
     }
 
-    public void editProduct(String name) {
-
+    public void setProduct(String name) {
+        this.name = name;
     }
 
-    public void editPrice(String price) {
+    public void setPrice(String price) {
+        this.price = price;
+    }
 
+    public String showProduct() {
+        return ("Product: " + this.name + " Price: $" + this.price);
     }
 }

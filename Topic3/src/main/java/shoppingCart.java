@@ -1,5 +1,8 @@
+import java.util.ArrayList;
+
 public interface shoppingCart {
-    void buy ();
+    String buy ();
     void addProduct(product product);
     void deleteProduct (product product);
+    ArrayList showCart();
 }
