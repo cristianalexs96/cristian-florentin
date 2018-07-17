@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"product"},{"p":"<Unnamed>","l":"productInMemory"},{"p":"<Unnamed>","l":"productTest"},{"p":"<Unnamed>","l":"shoppingCart"},{"p":"<Unnamed>","l":"shoppingCartInMemory"},{"p":"<Unnamed>","l":"shoppingCartTest"},{"p":"<Unnamed>","l":"user"},{"p":"<Unnamed>","l":"userInMemory"},{"p":"<Unnamed>","l":"userTest"}]
