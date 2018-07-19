@@ -9,7 +9,7 @@ public class HighSchoolAccess {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/high-school?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-            Connection connection = DriverManager.getConnection(url, "root","n8kiabelle");
+            Connection connection = DriverManager.getConnection(url, "root","root");
 
         }
         catch (ClassNotFoundException ex){
@@ -24,7 +24,7 @@ public class HighSchoolAccess {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/high-school?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-            Connection connection = DriverManager.getConnection(url, "root","n8kiabelle");
+            Connection connection = DriverManager.getConnection(url, "root","root");
             Statement stmt = connection.createStatement();
             String query1 = "Select * from Course where name = '" + course + "'";
             ResultSet rs = stmt.executeQuery(query1);
@@ -77,7 +77,7 @@ public class HighSchoolAccess {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/high-school?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-            Connection connection = DriverManager.getConnection(url, "root","n8kiabelle");
+            Connection connection = DriverManager.getConnection(url, "root","root");
             Statement stmt = connection.createStatement();
             String query1 = "Select * from Course where name = '" + course + "'";
             ResultSet rs = stmt.executeQuery(query1);
@@ -161,7 +161,7 @@ public class HighSchoolAccess {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/high-school?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-            Connection connection = DriverManager.getConnection(url, "root","n8kiabelle");
+            Connection connection = DriverManager.getConnection(url, "root","root");
             Statement stmt = connection.createStatement();
             String query1 = "select * from teacher\n" +
                     "where teacher.First_name = '"+name+"'\n" +
